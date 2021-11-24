@@ -77,7 +77,7 @@ class Calculator {
   }
 
   compute() {
-    let resault
+    let result
     let prev = parseFloat(this.prevOperand)
     let curr = parseFloat(this.currOperand)
 
@@ -85,16 +85,16 @@ class Calculator {
 
     switch (this.operation) {
       case '÷':
-        resault = prev / curr
+        result = prev / curr
         break;
       case '*':
-        resault = prev * curr
+        result = prev * curr
         break;
       case '-':
-        resault = prev - curr
+        result = prev - curr
         break;
       case '+':
-        resault = prev + curr
+        result = prev + curr
         break;
       default:
         return
@@ -102,7 +102,7 @@ class Calculator {
 
     this.clear()
 
-    this.currOperand = resault
+    this.currOperand = result
   }
 
   updateDiasplay() {
