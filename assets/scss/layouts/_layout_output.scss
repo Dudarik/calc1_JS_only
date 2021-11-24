@@ -1,0 +1,25 @@
+.output{
+  grid-column: 1 / -1;
+  background-color: var(--output-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  padding: .7rem;
+
+  word-wrap: break-word;
+  word-break: break-all;
+
+  .previous-operand{
+    color: var(--previous-operand-color);
+    font-size: var(--one-and-half-font-size);
+    min-height: var(--double-and-half-font-size);
+  }
+
+  .current-operand{
+    color: var(--current-operand-color);
+    font-size: var(--double-and-half-font-size);
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,25 @@
+.calculator-buttons{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+  
+
+  > button{
+    cursor: pointer;
+    font-size: var(--double-font-size);
+    border: 1px solid white;
+    outline: none;
+    background-color: var(--buttons-bg-color);
+    transition: .4s;
+
+    &:hover{
+      background-color: var(--buttons-bg-color-hover);
+    }
+  }
+}
+
+.span-two{
+  grid-column: span 2;
+}
